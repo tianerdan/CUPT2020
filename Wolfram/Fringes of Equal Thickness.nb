@@ -1,0 +1,161 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5706,        153]
+NotebookOptionsPosition[      5187,        134]
+NotebookOutlinePosition[      5623,        152]
+CellTagsIndexPosition[      5580,        149]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"\[Lambda]_", ",", "R_"}], "]"}], ":=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"4", "*", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"Cos", "[", 
+         RowBox[{
+          FractionBox["\[Pi]", 
+           RowBox[{"\[Lambda]", "*", "0.000001"}]], 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"x", "*", "0.001"}], ")"}], "2"], 
+             RowBox[{"R", "*", "0.001"}]], "+", 
+            FractionBox[
+             RowBox[{"\[Lambda]", "*", "0.000001"}], "2"]}], ")"}]}], "]"}], 
+        ")"}], "2"]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"f", "[", 
+     RowBox[{"\[Lambda]", ",", "R"}], "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Lambda]", ",", "632.8", ",", "\"\<Wavelength (nm)\>\""}], 
+      "}"}], ",", "360", ",", "800"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"R", ",", "5", ",", "\"\<Radius of cylindrical lens (mm)\>\""}],
+       "}"}], ",", "1", ",", "10"}], "}"}], ",", " ", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.817195491652658*^9, 3.8171955384380608`*^9}, {
+  3.817195568702992*^9, 3.8171958514073477`*^9}, {3.8171960142452803`*^9, 
+  3.817196016238428*^9}, {3.81719618862554*^9, 3.817196226363409*^9}, {
+  3.81719638343046*^9, 3.817196416722185*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"e27e1367-eb9e-47d6-8e98-bebd8fa06ee6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`R$$ = 
+    9.354999999999999, $CellContext`\[Lambda]$$ = 776.2264694213864, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"\:65e0\:6807\:9898\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Lambda]$$], 632.8, "Wavelength (nm)"}, 360, 800}, {{
+       Hold[$CellContext`R$$], 5, "Radius of cylindrical lens (mm)"}, 1, 10}},
+     Typeset`size$$ = {1080., {331., 347.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`R$$ = 5, $CellContext`\[Lambda]$$ = 632.8},
+       "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        $CellContext`f[$CellContext`\[Lambda]$$, $CellContext`R$$]], 
+      "Specifications" :> {{{$CellContext`\[Lambda]$$, 632.8, 
+          "Wavelength (nm)"}, 360, 
+         800}, {{$CellContext`R$$, 5, "Radius of cylindrical lens (mm)"}, 1, 
+         10}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{1207., {538., 556.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`f[
+         Pattern[$CellContext`\[Lambda], 
+          Blank[]], 
+         Pattern[$CellContext`R, 
+          Blank[]]] := 
+       Plot[4 Cos[(Pi/($CellContext`\[Lambda] 
+             1.*^-6)) (($CellContext`x 0.001)^2/($CellContext`R 
+              0.001) + ($CellContext`\[Lambda] 1.*^-6)/
+              2)]^2, {$CellContext`x, -5, 5}], $CellContext`f[
+         Pattern[$CellContext`n1, 
+          Blank[]], 
+         Pattern[$CellContext`n2, 
+          Blank[]], 
+         Pattern[$CellContext`i1, 
+          Blank[]]] := Plot[(-Cot[
+            
+            ArcSin[($CellContext`n1/$CellContext`n2) 
+             Sin[$CellContext`i1]]]) $CellContext`x, {$CellContext`x, 0, 
+          12}]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.8171964175649*^9, {3.817196776239443*^9, 3.81719677976645*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"3f336837-e1cd-4de9-93fe-6fac6f1d5608"]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+Magnification:>3. Inherited,
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) \
+(2020\:5e744\:670815\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"22c03d1d-1b9c-4342-9265-4b4eaa7e5b24"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1817, 49, 765, "Input",ExpressionUUID->"e27e1367-eb9e-47d6-8e98-bebd8fa06ee6"],
+Cell[2400, 73, 2771, 58, 1180, "Output",ExpressionUUID->"3f336837-e1cd-4de9-93fe-6fac6f1d5608"]
+}, Open  ]]
+}
+]
+*)
+

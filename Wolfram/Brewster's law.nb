@@ -1,0 +1,185 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6968,        177]
+NotebookOptionsPosition[      6447,        158]
+NotebookOutlinePosition[      6886,        176]
+CellTagsIndexPosition[      6843,        173]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"n1_", ",", "n2_", ",", "i1_"}], "]"}], ":=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"Cot", "[", 
+        RowBox[{"ArcSin", "[", 
+         RowBox[{
+          FractionBox["n1", "n2"], " ", 
+          RowBox[{"Sin", "[", "i1", "]"}]}], "]"}], "]"}]}], " ", "x"}], ",", 
+     
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "12"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"y", "=", 
+        RowBox[{
+         RowBox[{"Cot", "[", "i1", "]"}], " ", 
+         RowBox[{"Abs", "[", "x", "]"}]}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "12"}], ",", "12"}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "12"}], ",", "12"}], "}"}]}]}], "]"}], ",", 
+     RowBox[{"f", "[", 
+      RowBox[{"n1", ",", "n2", ",", "i1"}], "]"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n1", ",", "1", ",", "\"\<refractive index 1\>\""}], "}"}], ",",
+      "0", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n2", ",", "1.5", ",", "\"\<refractive index 2\>\""}], "}"}], 
+     ",", "0", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"i1", ",", 
+       RowBox[{"\[Pi]", "/", "4"}], ",", "\"\<incident angle\>\""}], "}"}], 
+     ",", "0", ",", 
+     RowBox[{"\[Pi]", "/", "2"}]}], "}"}], ",", " ", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8139979550637703`*^9, 3.813997964362137*^9}, {
+  3.813998321993433*^9, 3.813998365566325*^9}, {3.813998505653613*^9, 
+  3.8139986010173693`*^9}, {3.8139992795205393`*^9, 3.813999295361096*^9}, {
+  3.8140804860377274`*^9, 3.814080507734277*^9}, {3.814081208699457*^9, 
+  3.8140812371608*^9}, {3.814081653756464*^9, 3.814081764434187*^9}, {
+  3.814082072612727*^9, 3.8140820817291527`*^9}, {3.814083542970428*^9, 
+  3.814083557225271*^9}, {3.814083813157989*^9, 3.81408387098*^9}, {
+  3.8140839291301813`*^9, 3.8140839542782307`*^9}, {3.814084073055539*^9, 
+  3.814084080533637*^9}, {3.8140842193630123`*^9, 3.814084266840733*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"50d972fc-be1c-46b5-af3e-5130a37e874f"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`i1$$ = 
+    1.5707963267948966`, $CellContext`n1$$ = 0.74, $CellContext`n2$$ = 0.97, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"\:65e0\:6807\:9898\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n1$$], 1, "refractive index 1"}, 0, 2}, {{
+       Hold[$CellContext`n2$$], 1.5, "refractive index 2"}, 0, 2}, {{
+       Hold[$CellContext`i1$$], Rational[1, 4] Pi, "incident angle"}, 0, 
+      Rational[1, 2] Pi}}, Typeset`size$$ = {540., {164., 171.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`i1$$ = 
+        Rational[1, 4] Pi, $CellContext`n1$$ = 1, $CellContext`n2$$ = 1.5}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[$CellContext`y = 
+         Cot[$CellContext`i1$$] Abs[$CellContext`x], {$CellContext`x, -12, 
+          12}, PlotRange -> {-12, 12}], 
+        $CellContext`f[$CellContext`n1$$, $CellContext`n2$$, \
+$CellContext`i1$$]], 
+      "Specifications" :> {{{$CellContext`n1$$, 1, "refractive index 1"}, 0, 
+         2}, {{$CellContext`n2$$, 1.5, "refractive index 2"}, 0, 
+         2}, {{$CellContext`i1$$, Rational[1, 4] Pi, "incident angle"}, 0, 
+         Rational[1, 2] Pi}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{606., {255., 263.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`y = 11.99176238350633, $CellContext`f[
+         Pattern[$CellContext`a, 
+          Blank[]], 
+         Pattern[$CellContext`max, 
+          Blank[]]] := Plot[
+         Sin[$CellContext`a $CellContext`x], {$CellContext`x, 
+          0, $CellContext`max}], $CellContext`f[
+         Pattern[$CellContext`n1, 
+          Blank[]], 
+         Pattern[$CellContext`n2, 
+          Blank[]], 
+         Pattern[$CellContext`i1, 
+          Blank[]]] := Plot[(-Cot[
+            
+            ArcSin[($CellContext`n1/$CellContext`n2) 
+             Sin[$CellContext`i1]]]) $CellContext`x, {$CellContext`x, 0, 
+          12}]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.814080451706244*^9, {3.8140804922142143`*^9, 3.814080508764637*^9}, {
+   3.8140812095357723`*^9, 3.8140812381199303`*^9}, {3.814081672891534*^9, 
+   3.814081713703774*^9}, {3.814081754648428*^9, 3.814081765007782*^9}, 
+   3.81408354956277*^9, {3.814083847691885*^9, 3.814083871792397*^9}, 
+   3.814083956203582*^9, 3.8140842242448387`*^9, 3.814084267524959*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"5f2b46a6-dc05-44dc-8d3a-272b15748f58"]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{44, Automatic}, {Automatic, 82}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) \
+(2020\:5e744\:670815\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e4a79cc6-7be0-4ee8-9054-7ab871a59682"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2520, 65, 253, "Input",ExpressionUUID->"50d972fc-be1c-46b5-af3e-5130a37e874f"],
+Cell[3103, 89, 3328, 66, 546, "Output",ExpressionUUID->"5f2b46a6-dc05-44dc-8d3a-272b15748f58"]
+}, Open  ]]
+}
+]
+*)
+
